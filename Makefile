@@ -1,7 +1,7 @@
 CC = gcc
 CFLAGS = -Wall
 
-all: task1 task2 task3 task4 build
+all: task1 task2 task3 task4
 
 build:
 	mkdir ./build
@@ -19,4 +19,4 @@ task4: build task4/task4.c
 	$(CC) $(CFLAGS) task4/task4.c -o build/task4 -lm
 
 clean:
-	rm -rf build/
+	rm -rf build/task1 build/task2 build/task3 build/task4

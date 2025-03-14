@@ -2,7 +2,9 @@
 #include <unistd.h>
 
 int main(int argc, char* argv[]){
-    int a = 5, b = 14;
+    int a, b;
+    printf("Введите значение a: "); scanf("%d", &a);
+    printf("Введите значение b: "); scanf("%d", &b);
     int *p = &a, *k = &b;
     *p *= 2;
     *k /= 2;
